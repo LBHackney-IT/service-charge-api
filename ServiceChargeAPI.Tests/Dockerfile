@@ -6,16 +6,16 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT='true'
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
-COPY ./transactions-api.sln ./
-COPY ./transactions-api/transactions-api.csproj ./transactions-api/
-COPY ./transactions-api.Tests/transactions-api.Tests.csproj ./transactions-api.Tests/
+COPY ./ServiceChargeAPI.sln ./
+COPY ./ServiceChargeAPI/ServiceChargeAPI.csproj ./ServiceChargeAPI/
+COPY ./ServiceChargeAPI.Tests/ServiceChargeAPI.Tests.csproj ./ServiceChargeAPI.Tests/
 
-RUN dotnet restore ./transactions-api/transactions-api.csproj
-RUN dotnet restore ./transactions-api.Tests/transactions-api.Tests.csproj
+RUN dotnet restore ./ServiceChargeAPI/ServiceChargeAPI.csproj
+RUN dotnet restore ./ServiceChargeAPI.Tests/ServiceChargeAPI.Tests.csproj
 
 # Copy everything else and build
 COPY . .
 
-RUN dotnet build -c debug -o out transactions-api.Tests/transactions-api.Tests.csproj
+RUN dotnet build -c debug -o out ServiceChargeAPI.Tests/ServiceChargeAPI.Tests.csproj
 
 CMD dotnet test
