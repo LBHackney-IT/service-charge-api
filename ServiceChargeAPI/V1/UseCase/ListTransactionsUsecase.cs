@@ -1,6 +1,6 @@
 using System;
 using ServiceChargeAPI.V1.Boundary;
-using UnitTests.V1.Gateways;
+using ServiceChargeAPI.V1.Gateways;
 
 namespace ServiceChargeAPI.UseCase.V1
 {

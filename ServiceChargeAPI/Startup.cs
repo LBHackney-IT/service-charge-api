@@ -7,8 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ServiceChargeAPI.UseCase.V1;
 using ServiceChargeAPI.V1.Boundary;
-using UnitTests.V1.Gateways;
-using UnitTests.V1.Infrastructure;
+using ServiceChargeAPI.V1.Gateways;
+using ServiceChargeAPI.V1.Infrastructure;
 
 namespace ServiceChargeAPI
 {

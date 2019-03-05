@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 using ServiceChargeAPI.V1.Domain;
 using ServiceChargeAPI.V1.Factory;
-using UnitTests.V1.Infrastructure;
+using ServiceChargeAPI.V1.Infrastructure;
 
-namespace UnitTests.V1.Gateways
+namespace ServiceChargeAPI.V1.Gateways
 {
     public class TransactionsGateway : ITransactionsGateway
     {

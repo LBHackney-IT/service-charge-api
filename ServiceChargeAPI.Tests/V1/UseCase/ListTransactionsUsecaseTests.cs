@@ -6,7 +6,7 @@ using ServiceChargeAPI.UseCase.V1;
 using ServiceChargeAPI.V1.Boundary;
 using ServiceChargeAPI.V1.Domain;
 using Moq;
-using UnitTests.V1.Gateways;
+using ServiceChargeAPI.V1.Gateways;
 
 namespace UnitTests.V1.UseCase
 {

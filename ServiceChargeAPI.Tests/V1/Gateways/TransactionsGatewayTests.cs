@@ -2,6 +2,7 @@ using System.Linq;
 using Bogus;
 using NUnit.Framework;
 using ServiceChargeAPI.V1.Domain;
+using ServiceChargeAPI.V1.Gateways;
 using UnitTests.V1.Helper;
 
 namespace UnitTests.V1.Gateways

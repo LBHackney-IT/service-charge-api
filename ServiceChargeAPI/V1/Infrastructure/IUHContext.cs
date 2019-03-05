@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ServiceChargeAPI.V1.Domain;
 
-namespace UnitTests.V1.Infrastructure
+namespace ServiceChargeAPI.V1.Infrastructure
 {
     public interface IUHContext
     {
