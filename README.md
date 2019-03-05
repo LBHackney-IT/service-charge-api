@@ -1,6 +1,6 @@
-# LBH Transactions API
+# LBH Service Charge API
 
-Transactions API brings all the transaction records for citizens from Universal Housing backoffice.
+Service Charge API brings all the service charge records for leaseholders or freeholders of the property.
 
 ## Stack
 
@@ -9,6 +9,7 @@ Transactions API brings all the transaction records for citizens from Universal 
 
 ## Dependencies
 
+- Transactions API
 - Universal Housing Simulator
 
 ## Contributing
@@ -31,7 +32,7 @@ $ aws configure
 ```
 2. Log into AWS ECR.
 ```sh
-$ aws ecr get-login --no-include-email
+$ $(aws ecr get-login --no-include-email)
 ```
 3. Build and serve the application. It will be available in the port 3000.
 ```sh
@@ -42,7 +43,7 @@ $ make build && make serve
 
 We use a pull request workflow, where changes are made on a branch and approved by one or more other maintainers before the developer can merge into `master` branch.
 
-![Circle CI Workflow Example](docs/circle_ci_workflow.png)
+![Circle CI Workflow Example](https://github.com/LBHackney-IT/transactions-api/raw/master/docs/circle_ci_workflow.png)
 
 Then we have an automated six step deployment process, which runs in CircleCI.
 
@@ -79,3 +80,5 @@ $ make test
 [universal-housing-simulator]: https://github.com/LBHackney-IT/lbh-universal-housing-simulator
 [made-tech]: https://madetech.com/
 [AWS-CLI]: https://aws.amazon.com/cli/
+
+
