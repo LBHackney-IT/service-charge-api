@@ -91,8 +91,8 @@ workflows:
       - check
       - aws-ecr/build_and_push_image:
           name: build_and_push_image
-          dockerfile: ./service-charge-api/Dockerfile
-          path: ./service-charge-api
+          dockerfile: ./ServiceChargeAPI/Dockerfile
+          path: ./ServiceChargeAPI
           account-url: AWS_ECR_HOST
           repo: $AWS_ECR_PATH
           aws-access-key-id: AWS_ID_KEY
