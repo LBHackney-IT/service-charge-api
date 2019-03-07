@@ -4,16 +4,16 @@ setup:
 
 .PHONY: build
 build:
-	docker-compose run transactions-api dotnet build
+	docker-compose run service-charge-api dotnet build
 
 .PHONY: serve
 serve:
-	docker-compose up transactions-api
+	docker-compose up service-charge-api
 
 .PHONY: shell
 shell:
-	docker-compose run transactions-api bash
+	docker-compose run service-charge-api bash
 
 .PHONY: test
 test:
-	docker-compose build transactions-api-test && docker-compose up transactions-api-test
+	docker-compose build service-charge-api-test && docker-compose up service-charge-api-test
