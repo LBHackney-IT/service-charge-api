@@ -15,8 +15,8 @@ commands:
     steps:
       - aws-cli/install
       - aws-cli/configure:
-          aws-access-key-id: AWS_ID_KEY
-          aws-secret-access-key: AWS_SECRET_KEY
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
       - run:
           name: Install jq
@@ -49,8 +49,8 @@ jobs:
       - checkout
       - aws-cli/install
       - aws-cli/configure:
-          aws-access-key-id: AWS_ID_KEY
-          aws-secret-access-key: AWS_SECRET_KEY
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           aws-region: AWS_REGION
       - aws-ecr/ecr-login
       - setup_remote_docker
@@ -95,8 +95,8 @@ workflows:
           path: ./ServiceChargeAPI
           account-url: AWS_ECR_HOST
           repo: $AWS_ECR_PATH
-          aws-access-key-id: AWS_ID_KEY
-          aws-secret-access-key: AWS_SECRET_KEY
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           region: AWS_REGION
           tag: "${CIRCLE_SHA1}"
           filters:
